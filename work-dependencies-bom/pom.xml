@@ -308,29 +308,29 @@
             <url>http://maven.aliyun.com/nexus/content/groups/public</url>
         </repository>
 
-        <repository>
-            <id>xss-releases</id>
-            <name>xss-releases</name>
-            <url>http://nexus.whsshg.com/repository/maven-releases/</url>
-        </repository>
+<!--        <repository>-->
+<!--            <id>xss-releases</id>-->
+<!--            <name>xss-releases</name>-->
+<!--            <url>http://nexus.whsshg.com/repository/maven-releases/</url>-->
+<!--        </repository>-->
 
-        <repository>
-            <id>xss-snapshots</id>
-            <name>xss-snapshots</name>
-            <url>http://nexus.whsshg.com/repository/maven-snapshots/</url>
-        </repository>
+<!--        <repository>-->
+<!--            <id>xss-snapshots</id>-->
+<!--            <name>xss-snapshots</name>-->
+<!--            <url>http://nexus.whsshg.com/repository/maven-snapshots/</url>-->
+<!--        </repository>-->
     </repositories>
 
-    <distributionManagement>
-        <repository>
-            <id>xss-releases</id>
-            <url>http://nexus.whsshg.com/repository/maven-releases/</url>
-        </repository>
+<!--    <distributionManagement>-->
+<!--        <repository>-->
+<!--            <id>xss-releases</id>-->
+<!--            <url>http://nexus.whsshg.com/repository/maven-releases/</url>-->
+<!--        </repository>-->
 
-        <snapshotRepository>
-            <id>xss-snapshots</id>
-            <url>http://nexus.whsshg.com/repository/maven-snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
+<!--        <snapshotRepository>-->
+<!--            <id>xss-snapshots</id>-->
+<!--            <url>http://nexus.whsshg.com/repository/maven-snapshots/</url>-->
+<!--        </snapshotRepository>-->
+<!--    </distributionManagement>-->
 
 </project>

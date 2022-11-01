@@ -20,6 +20,23 @@
     </properties>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <optional>true</optional>
+        </dependency>
+
+        <dependency>
+            <groupId>com.panda</groupId>
+            <artifactId>work-core</artifactId>
+            <optional>true</optional>
+        </dependency>
 
     </dependencies>
 
@@ -40,18 +57,6 @@
             <id>nexus-aliyun</id>
             <name>Nexus aliyun</name>
             <url>http://maven.aliyun.com/nexus/content/groups/public</url>
-        </repository>
-
-        <repository>
-            <id>xss-releases</id>
-            <name>xss-releases</name>
-            <url>http://nexus.whsshg.com/repository/maven-releases/</url>
-        </repository>
-
-        <repository>
-            <id>xss-snapshots</id>
-            <name>xss-snapshots</name>
-            <url>http://nexus.whsshg.com/repository/maven-snapshots/</url>
         </repository>
     </repositories>
 
