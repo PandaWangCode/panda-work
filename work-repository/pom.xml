@@ -13,7 +13,6 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
-
         <!--一套用来给代码分析工具(如IDEA)检查代码缺陷用的注解，类似jsr303(Bean Validation规范)-->
         <jsr305.version>3.0.2</jsr305.version>
         <work.version>0.0.1-SNAPSHOT</work.version>
@@ -35,7 +34,6 @@
         <dependency>
             <groupId>com.panda</groupId>
             <artifactId>work-core</artifactId>
-            <optional>true</optional>
         </dependency>
 
     </dependencies>
@@ -58,6 +56,30 @@
             <name>Nexus aliyun</name>
             <url>http://maven.aliyun.com/nexus/content/groups/public</url>
         </repository>
+
+        <repository>
+            <id>xss-releases</id>
+            <name>xss-releases</name>
+            <url>http://nexus.whsshg.com/repository/maven-releases/</url>
+        </repository>
+
+        <repository>
+            <id>xss-snapshots</id>
+            <name>xss-snapshots</name>
+            <url>http://nexus.whsshg.com/repository/maven-snapshots/</url>
+        </repository>
     </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>xss-releases</id>
+            <url>http://nexus.whsshg.com/repository/maven-releases/</url>
+        </repository>
+
+        <snapshotRepository>
+            <id>xss-snapshots</id>
+            <url>http://nexus.whsshg.com/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 
 </project>
