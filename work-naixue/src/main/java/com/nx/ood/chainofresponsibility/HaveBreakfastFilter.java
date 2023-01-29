@@ -1,6 +1,6 @@
 package com.nx.ood.chainofresponsibility;
 
-public class HaveBreakfastFilter implements StudyPrepareFilter{
+public class HaveBreakfastFilter implements IStudyPrepareFilter {
     @Override
     public void doFilter(PreparationList preparationList, FilterChain filterChain) {
         if (preparationList.isHaveBreakfast()){

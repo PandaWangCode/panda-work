@@ -3,19 +3,19 @@ package com.nx.ood.chainofresponsibility;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FilterChain implements StudyPrepareFilter {
+public class FilterChain implements IStudyPrepareFilter {
 
     private int pos = 0;
 
     private Study study;
 
-    private List<StudyPrepareFilter> studyPrepareFilterList;
+    private List<IStudyPrepareFilter> studyPrepareFilterList;
 
     public FilterChain(Study study) {
         this.study = study;
     }
 
-    public void addFilter(StudyPrepareFilter studyPrepareFilter) {
+    public void addFilter(IStudyPrepareFilter studyPrepareFilter) {
         if (studyPrepareFilterList == null) {
             studyPrepareFilterList = new ArrayList<>();
         }

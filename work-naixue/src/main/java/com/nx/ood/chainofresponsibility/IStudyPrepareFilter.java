@@ -1,6 +1,6 @@
 package com.nx.ood.chainofresponsibility;
 
-public interface StudyPrepareFilter {
+public interface IStudyPrepareFilter {
 
     public void doFilter(PreparationList preparationList, FilterChain filterChain);
 

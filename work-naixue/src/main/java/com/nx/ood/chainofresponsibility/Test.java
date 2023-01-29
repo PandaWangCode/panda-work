@@ -8,9 +8,9 @@ public class Test {
         preparationList.setHaveBreakfast(true);
 
         Study study = new Study();
-        StudyPrepareFilter washFace = new WashFaceFilter();
-        StudyPrepareFilter washHair = new WashHairFilter();
-        StudyPrepareFilter haveBreakFast = new HaveBreakfastFilter();
+        IStudyPrepareFilter washFace = new WashFaceFilter();
+        IStudyPrepareFilter washHair = new WashHairFilter();
+        IStudyPrepareFilter haveBreakFast = new HaveBreakfastFilter();
 
         FilterChain filterChain = new FilterChain(study);
         filterChain.addFilter(washFace);

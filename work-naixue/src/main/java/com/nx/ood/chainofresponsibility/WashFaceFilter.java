@@ -1,6 +1,6 @@
 package com.nx.ood.chainofresponsibility;
 
-public class WashFaceFilter implements StudyPrepareFilter{
+public class WashFaceFilter implements IStudyPrepareFilter {
 
     @Override
     public void doFilter(PreparationList preparationList, FilterChain filterChain) {
