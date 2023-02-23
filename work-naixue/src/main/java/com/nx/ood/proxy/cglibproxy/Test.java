@@ -1,5 +1,6 @@
 package com.nx.ood.proxy.cglibproxy;
 
+import net.sf.cglib.core.DebuggingClassWriter;
 import net.sf.cglib.proxy.Enhancer;
 
 /**
@@ -8,6 +9,8 @@ import net.sf.cglib.proxy.Enhancer;
 public class Test {
 
     public static void main(String[] args) {
+        System.setProperty(DebuggingClassWriter.DEBUG_LOCATION_PROPERTY,"D:\\WORK\\panda-work-code\\work-naixue");
+
         Enhancer enhancer = new Enhancer();
         // 继承被代理的类
         enhancer.setSuperclass(HelloService.class);

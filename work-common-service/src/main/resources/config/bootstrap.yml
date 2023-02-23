@@ -1,0 +1,30 @@
+spring:
+  application:
+    name: work-common-service
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mysql-t.whsshg.com:50538/xss_online?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false&autoReconnect=true&zeroDateTimeBehavior=convertToNull&rewriteBatchedStatements=true
+    username: root
+    password: ULG#-bZPWQUDI?M%:uT*L1zTQ3*E0Z
+    hikari:
+      minimum-idle: 5
+      maximum-pool-size: 50
+      auto-commit: true
+      idle-timeout: 30000
+      connection-timeout: 30000
+      connection-test-query: SELECT 1
+  redis:
+    host: redis-t.whsshg.com
+    port: 50671
+    password: be2ENdOFcSbVblpcgJ1w
+    database: 1
+    timeout: 50000
+    lettuce:
+      pool:
+        max-active: 10
+        max-idle: 5
+        min-idle: 1
+        max-wait: 5ms
+  cache:
+    redis:
+      time-to-live: 60000
