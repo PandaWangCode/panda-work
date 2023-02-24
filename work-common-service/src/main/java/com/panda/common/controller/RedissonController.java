@@ -21,4 +21,9 @@ public class RedissonController {
         return redissonService.getRedisson();
     }
 
+    @GetMapping("/rLock")
+    public R<String> getRedissonLock() {
+        return redissonService.redissonLock();
+    }
+
 }
