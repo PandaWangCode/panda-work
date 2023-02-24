@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 @RequiredArgsConstructor
-public class GuoYaoService {
+public class RedissonService {
 
     private final RedissonClient redissonClient;
 
@@ -18,7 +18,7 @@ public class GuoYaoService {
         nameList.add("bingo");
         nameList.add("yanglbme");
         nameList.add("https://github.com/yanglbme");
-        nameList.remove(-1);
+        // nameList.remove(-1);
         boolean contains = nameList.contains("yanglbme");
         System.out.println("List size: " + nameList.size());
         System.out.println("Is list contains name 'yanglbme': " + contains);

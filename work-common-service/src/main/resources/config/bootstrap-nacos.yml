@@ -1,0 +1,19 @@
+nacos:
+  server-addr: 8.136.43.133:8848
+  username: nacos
+  password: ENC(OxpFaS16L/18U1xEdoZkCwvEMVxnxGt82coPWNmbFoumVCrbJoZontDwG2j2vBCaIwWL9uuUd9qMiG/d84LkgQ==)
+
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: ${nacos.server-addr}
+        namespace: ns-${spring.profiles.active:release}
+        username: ${nacos.username}
+        password: ${nacos.password}
+      config:
+        server-addr: ${nacos.server-addr}
+        file-extension: yml
+        namespace: ns-${spring.profiles.active:release}
+        username: ${nacos.username}
+        password: ${nacos.password}

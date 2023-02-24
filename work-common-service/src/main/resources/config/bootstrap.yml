@@ -1,6 +1,8 @@
 spring:
   application:
     name: work-common-service
+  profiles:
+    include: nacos, jasypt, server
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://mysql-t.whsshg.com:50538/xss_online?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8&useSSL=false&autoReconnect=true&zeroDateTimeBehavior=convertToNull&rewriteBatchedStatements=true
