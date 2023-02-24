@@ -1,6 +1,6 @@
 package com.panda.common.service;
 
-import com.baomidou.mybatisplus.extension.api.R;
+import com.panda.core.pojo.rsp.R;
 import lombok.RequiredArgsConstructor;
 import org.redisson.api.RList;
 import org.redisson.api.RedissonClient;
