@@ -19,7 +19,7 @@ spring:
     host: redis-t.whsshg.com
     port: 50671
     password: be2ENdOFcSbVblpcgJ1w
-    database: 1
+    database: 15
     timeout: 50000
     lettuce:
       pool:
