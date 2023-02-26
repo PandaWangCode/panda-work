@@ -26,4 +26,15 @@ public class RedissonController {
         return redissonService.redissonLock();
     }
 
+    @GetMapping("/readWriteLock/write")
+    public R<String> write() {
+        return redissonService.writeValue();
+    }
+
+    @GetMapping("/readWriteLock/read")
+    public R<String> read() {
+        return redissonService.readValue();
+    }
+
+
 }

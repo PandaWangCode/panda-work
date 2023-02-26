@@ -76,15 +76,17 @@ public class RedissonService {
          RLock rLock = lock.writeLock();
          String s = "";
          try {
+             rLock.lock();
              s = UUID.randomUUID().toString();
              // 模拟义务执行时间
-             Thread.sleep(30000);
+              Thread.sleep(15000);
          } catch (Exception e) {
              log.info("{}", e.getMessage());
          } finally {
              rLock.unlock();
          }
-         redisTemplate.opsForValue().set(WRITE_VALUE, s);
+         // redisTemplate.opsForValue().set(WRITE_VALUE, s);
+         log.info("写入成功！");
         return R.ok(s);
      }
 
@@ -96,8 +98,10 @@ public class RedissonService {
         // 加读锁
         RLock wLock = lock.readLock();
         try {
-            s = redisTemplate.opsForValue().get(WRITE_VALUE);
-            TimeUnit.SECONDS.sleep(10);
+            wLock.lock();
+//            s = (String) redisTemplate.opsForValue().get(WRITE_VALUE);
+            log.info("读取成功！");
+            TimeUnit.SECONDS.sleep(1);
         } catch (Exception e) {
             log.info("{}", e.getMessage());
         } finally {
