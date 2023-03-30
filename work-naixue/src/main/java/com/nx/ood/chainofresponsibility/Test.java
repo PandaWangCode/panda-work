@@ -2,10 +2,10 @@ package com.nx.ood.chainofresponsibility;
 
 public class Test {
     public static void main(String[] args) {
-        checkDto preparationList = new checkDto();
-        preparationList.setWashFace(true);
-        preparationList.setWashHair(false);
-        preparationList.setHaveBreakfast(true);
+        CheckDto checkDto = new CheckDto();
+        checkDto.setWashFace(true);
+        checkDto.setWashHair(false);
+        checkDto.setHaveBreakfast(true);
 
         Study study = new Study();
         IStudyPrepareFilter washFace = new WashFaceFilter();
@@ -17,6 +17,6 @@ public class Test {
         filterChain.addFilter(washHair);
         filterChain.addFilter(haveBreakFast);
 
-        filterChain.doFilter(preparationList, filterChain);
+        filterChain.doFilter(checkDto, filterChain);
     }
 }

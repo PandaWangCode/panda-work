@@ -3,10 +3,10 @@ package com.nx.ood.chainofresponsibility;
 public class WashFaceFilter implements IStudyPrepareFilter {
 
     @Override
-    public void doFilter(checkDto preparationList, FilterChain filterChain) {
-        if (preparationList.isWashFace()){
+    public void doFilter(CheckDto checkDto, FilterChain filterChain) {
+        if (checkDto.isWashFace()){
             System.out.println("洗脸");
         }
-        filterChain.doFilter(preparationList, filterChain);
+        filterChain.doFilter(checkDto, filterChain);
     }
 }

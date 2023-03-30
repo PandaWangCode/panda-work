@@ -3,11 +3,11 @@ package com.nx.ood.chainofresponsibility;
 public class WashHairFilter implements IStudyPrepareFilter {
 
     @Override
-    public void doFilter(checkDto preparationList, FilterChain filterChain) {
-        if (preparationList.isWashHair()){
+    public void doFilter(CheckDto checkDto, FilterChain filterChain) {
+        if (checkDto.isWashHair()){
             System.out.println("洗完头发");
         }
-        filterChain.doFilter(preparationList, filterChain);
+        filterChain.doFilter(checkDto, filterChain);
     }
 
 }
