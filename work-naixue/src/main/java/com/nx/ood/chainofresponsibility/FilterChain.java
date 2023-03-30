@@ -23,7 +23,7 @@ public class FilterChain implements IStudyPrepareFilter {
     }
 
     @Override
-    public void doFilter(PreparationList thingList, FilterChain filterChain) {
+    public void doFilter(checkDto thingList, FilterChain filterChain) {
         // 所有过滤器执行完毕，所做的事情
         if (pos == studyPrepareFilterList.size()) {
             study.study();

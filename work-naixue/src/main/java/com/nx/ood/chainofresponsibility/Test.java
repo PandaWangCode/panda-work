@@ -2,7 +2,7 @@ package com.nx.ood.chainofresponsibility;
 
 public class Test {
     public static void main(String[] args) {
-        PreparationList preparationList = new PreparationList();
+        checkDto preparationList = new checkDto();
         preparationList.setWashFace(true);
         preparationList.setWashHair(false);
         preparationList.setHaveBreakfast(true);

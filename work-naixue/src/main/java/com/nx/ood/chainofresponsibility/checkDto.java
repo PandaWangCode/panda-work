@@ -5,7 +5,7 @@ import lombok.Data;
 import java.io.Serializable;
 
 @Data
-public class PreparationList implements Serializable {
+public class checkDto implements Serializable {
 
     /**
      * 是否洗脸
