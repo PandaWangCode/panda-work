@@ -16,7 +16,10 @@ public class Test {
         filterChain.addFilter(washFace);
         filterChain.addFilter(washHair);
         filterChain.addFilter(haveBreakFast);
-
-        filterChain.doFilter(checkDto, filterChain);
+        try {
+            filterChain.doFilter(checkDto, filterChain);
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 }
