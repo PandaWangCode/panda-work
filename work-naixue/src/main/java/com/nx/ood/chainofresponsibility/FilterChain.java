@@ -1,6 +1,9 @@
 package com.nx.ood.chainofresponsibility;
 
+import net.sf.jsqlparser.expression.operators.relational.LikeExpression;
+
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class FilterChain implements IStudyPrepareFilter {
@@ -9,7 +12,7 @@ public class FilterChain implements IStudyPrepareFilter {
 
     private Study study;
 
-    private List<IStudyPrepareFilter> studyPrepareFilterList;
+    private List<IStudyPrepareFilter> studyPrepareFilterList = new LinkedList<>();
 
     public FilterChain(Study study) {
         this.study = study;
