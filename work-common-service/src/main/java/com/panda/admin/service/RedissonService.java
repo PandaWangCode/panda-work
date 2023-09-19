@@ -1,4 +1,4 @@
-package com.panda.common.service;
+package com.panda.admin.service;
 
 import com.panda.core.pojo.rsp.R;
 import lombok.RequiredArgsConstructor;

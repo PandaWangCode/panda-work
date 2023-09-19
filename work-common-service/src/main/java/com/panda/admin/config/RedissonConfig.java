@@ -1,4 +1,4 @@
-package com.panda.common.config;
+package com.panda.admin.config;
 
 import org.redisson.Redisson;
 import org.redisson.api.RedissonClient;

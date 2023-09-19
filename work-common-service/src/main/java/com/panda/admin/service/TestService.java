@@ -1,4 +1,4 @@
-package com.panda.common.service;
+package com.panda.admin.service;
 
 import com.panda.core.pojo.rsp.R;
 import lombok.RequiredArgsConstructor;
@@ -13,7 +13,10 @@ import java.util.concurrent.Semaphore;
 public class TestService {
 
     public R<String> printABC() {
-
+        Thread numberThread = new Thread(new NumberPrinter());
+        Thread letterThread = new Thread(new LetterPrinter());
+        numberThread.start();
+        letterThread.start();
         return R.ok("");
     }
 

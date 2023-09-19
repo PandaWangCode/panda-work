@@ -1,0 +1,17 @@
+dubbo:
+  application:
+    id: ${spring.application.name}
+    name: ${spring.application.name}
+  protocol:
+    name: dubbo
+    port: 53837
+  registry:
+    address: spring-cloud://${nacos.server-addr}
+    check: false
+  cloud:
+    subscribed-services: work-common-service
+  provider:
+    timeout: 300000
+    retries: 0
+  consumer:
+    check: false

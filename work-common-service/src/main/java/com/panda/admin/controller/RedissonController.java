@@ -1,7 +1,7 @@
-package com.panda.common.controller;
+package com.panda.admin.controller;
 
 
-import com.panda.common.service.RedissonService;
+import com.panda.admin.service.RedissonService;
 import com.panda.core.common.Constants;
 import com.panda.core.pojo.rsp.R;
 import lombok.AllArgsConstructor;

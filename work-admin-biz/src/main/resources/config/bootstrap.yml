@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: work-admin-biz
+  profiles:
+    include: nacos, jasypt, server, dubbo
+  redis:
+    host: redis-t.whsshg.com
+    port: 50671
+    password: be2ENdOFcSbVblpcgJ1w
+    database: 15
+    timeout: 50000
+    lettuce:
+      pool:
+        max-active: 10
+        max-idle: 5
+        min-idle: 1
+        max-wait: 5ms
+  cache:
+    redis:
+      time-to-live: 60000
