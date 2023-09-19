@@ -4,12 +4,12 @@ dubbo:
     name: ${spring.application.name}
   protocol:
     name: dubbo
-    port: 50002
+    port: 50001
   registry:
     address: spring-cloud://${nacos.server-addr}
     check: false
-  cloud:
-    subscribed-services: work-common-service
+#  cloud:
+#    subscribed-services:
   provider:
     timeout: 300000
     retries: 0

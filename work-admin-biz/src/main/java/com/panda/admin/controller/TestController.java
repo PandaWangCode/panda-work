@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 @AllArgsConstructor
-@RequestMapping( Constants.API+"/test")
+@RequestMapping( Constants.API + "/test")
 public class TestController {
 
     private final TestService testService;
 
-    @GetMapping("/printABC")
+    @GetMapping("/printAbc")
     public R<String> printABC() {
         return testService.printABC();
     }

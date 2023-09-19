@@ -1,7 +1,7 @@
 package com.panda.admin.controller;
 
 
-import com.panda.admin.service.TestService;
+import com.panda.admin.service.CommonTestService;
 import com.panda.core.common.Constants;
 import com.panda.core.pojo.rsp.R;
 import lombok.AllArgsConstructor;
@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping( Constants.API+"/test")
 public class TestController {
 
-    private final TestService testService;
+    private final CommonTestService testService;
 
     @GetMapping("/printABC")
     public R<String> printABC() {

@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
 @Slf4j
 @RestController
 @AllArgsConstructor
-@RequestMapping( Constants.API+"/redisson")
+@RequestMapping( Constants.API + "/redisson")
 public class RedissonController {
 
     private final RedissonService redissonService;
