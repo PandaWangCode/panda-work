@@ -15,7 +15,7 @@ import java.util.concurrent.Semaphore;
 public class TestService {
 
     @DubboReference
-    private ICommonTestService iCommonTestService;
+    ICommonTestService iCommonTestService;
 
     public R<String> printABC() {
         iCommonTestService.printABC();

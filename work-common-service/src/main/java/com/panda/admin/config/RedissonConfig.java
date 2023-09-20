@@ -9,14 +9,14 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class RedissonConfig {
 
-    @Bean
-    public RedissonClient redissonClient() {
-        Config config = new Config();
-        config.useSingleServer()
-                .setDatabase(15)
-                .setAddress("redis://redis-t.whsshg.com:50671")
-                .setPassword("be2ENdOFcSbVblpcgJ1w");
-        return Redisson.create(config);
-    }
+//    @Bean
+//    public RedissonClient redissonClient() {
+//        Config config = new Config();
+//        config.useSingleServer()
+//                .setDatabase(15)
+//                .setAddress("redis://redis-t.whsshg.com:50671")
+//                .setPassword("be2ENdOFcSbVblpcgJ1w");
+//        return Redisson.create(config);
+//    }
 
 }

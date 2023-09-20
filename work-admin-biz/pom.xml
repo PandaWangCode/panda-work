@@ -57,6 +57,11 @@
             <optional>true</optional>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+
         <!--spring boot 配置 - end ==========================================-->
 
         <!-- 其他 配置  begin ================================================ -->
@@ -65,9 +70,22 @@
             <artifactId>jasypt-spring-boot-starter</artifactId>
         </dependency>
 
+        <!--redisson 版本冲突问题 -->
         <dependency>
             <groupId>org.redisson</groupId>
             <artifactId>redisson-spring-boot-starter</artifactId>
+            <version>3.16.6</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.redisson</groupId>
+                    <artifactId>redisson-spring-data-23</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson-spring-data-22</artifactId>
+            <version>3.16.6</version>
         </dependency>
 
         <dependency>

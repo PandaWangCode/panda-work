@@ -47,7 +47,7 @@
         <jsoup.version>1.12.1</jsoup.version>
         <ikanalyzer.version>2012_u6</ikanalyzer.version>
         <lucene-analyzers.version>3.6.1</lucene-analyzers.version>
-        <redission.version>3.16.8</redission.version>
+        <redission.version>3.16.6</redission.version>
     </properties>
 
     <dependencyManagement>
