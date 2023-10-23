@@ -27,15 +27,6 @@ spring:
         max-idle: 5
         min-idle: 1
         max-wait: 5ms
-#    jedis:
-#      pool:
-#        max-active: 8 # 连接池最大连接数(负数表示没限制)
-#        max-wait: 800 # 连接池最大阻塞等待时间(负数表示没限制)
-#        max-idle: 5   # 连接池中的最大空闲连接
-#        min-idle: 2   # 连接池中的最小空闲连接
-#    url: redis://redis-t.whsshg.com:50671
-#    redisson:
-#      file: classpath:redisson.yml
   cache:
     redis:
       time-to-live: 60000
