@@ -48,6 +48,7 @@
         <ikanalyzer.version>2012_u6</ikanalyzer.version>
         <lucene-analyzers.version>3.6.1</lucene-analyzers.version>
         <redission.version>3.16.6</redission.version>
+        <sentinel.version>1.8.6</sentinel.version>
     </properties>
 
     <dependencyManagement>
@@ -270,6 +271,30 @@
                 <artifactId>redisson</artifactId>
                 <version>${redission.version}</version>
             </dependency>
+
+            <!-- Sentinel核心服务 -->
+            <dependency>
+                <groupId>com.alibaba.csp</groupId>
+                <artifactId>sentinel-core</artifactId>
+                <version>${sentinel.version}</version>
+            </dependency>
+            <!-- Sentinel核心服务 -->
+
+            <!-- Sentinel本地应用接入控制台 -->
+            <dependency>
+                <groupId>com.alibaba.csp</groupId>
+                <artifactId>sentinel-transport-simple-http</artifactId>
+                <version>${sentinel.version}</version>
+            </dependency>
+            <!-- Sentinel本地应用接入控制台 -->
+
+            <!-- Sentinel提供注解无侵入定义资源 -->
+            <dependency>
+                <groupId>com.alibaba.csp</groupId>
+                <artifactId>sentinel-annotation-aspectj</artifactId>
+                <version>${sentinel.version}</version>
+            </dependency>
+            <!-- Sentinel提供注解无侵入定义资源 -->
 
         </dependencies>
     </dependencyManagement>

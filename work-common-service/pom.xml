@@ -122,6 +122,27 @@
             <artifactId>javassist</artifactId>
         </dependency>
 
+        <!-- Sentinel核心服务 -->
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-core</artifactId>
+        </dependency>
+        <!-- Sentinel核心服务 -->
+
+        <!-- Sentinel本地应用接入控制台 -->
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-transport-simple-http</artifactId>
+        </dependency>
+        <!-- Sentinel本地应用接入控制台 -->
+
+        <!-- Sentinel提供注解无侵入定义资源 -->
+        <dependency>
+            <groupId>com.alibaba.csp</groupId>
+            <artifactId>sentinel-annotation-aspectj</artifactId>
+        </dependency>
+        <!-- Sentinel提供注解无侵入定义资源 -->
+
 
     </dependencies>
 

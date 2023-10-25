@@ -15,6 +15,7 @@ import java.util.concurrent.Semaphore;
 @RequiredArgsConstructor
 public class CommonTestService implements ICommonTestService {
 
+    @Override
     public R<String> printABC() {
         Thread numberThread = new Thread(new NumberPrinter());
         Thread letterThread = new Thread(new LetterPrinter());
