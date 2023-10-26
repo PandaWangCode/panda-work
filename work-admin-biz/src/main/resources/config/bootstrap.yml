@@ -2,7 +2,7 @@ spring:
   application:
     name: work-admin-biz
   profiles:
-    include: nacos, jasypt, server, dubbo
+    include: nacos, jasypt, server, dubbo, sentinel
   redis:
     host: redis-t.whsshg.com
     port: 50671
