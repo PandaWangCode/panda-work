@@ -4,4 +4,15 @@ spring:
       transport:
         port: 8719
         dashboard: localhost:9001
-      eager: true
+      eager: true  # 服务启动直接建立心跳链接
+      datasource:
+        ds:
+          nacos:
+            server-addr: ${nacos.server-addr}
+            dataId: ${spring.application.name}-sentinel
+            namespace: ns-${spring.profiles.active:release}
+            groupId: DEFAULT_GROUP
+            data-type: json
+            rule-type: flow # 规则：com.alibaba.cloud.sentinel.datasource.RuleType     FlowRule 限流规则
+            username: ${nacos.username}
+            password: ${nacos.password}
