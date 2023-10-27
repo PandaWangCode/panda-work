@@ -6,13 +6,23 @@ spring:
         dashboard: localhost:9001
       eager: true  # 服务启动直接建立心跳链接
       datasource:
-        ds:
+        ds-flow:  # 自定义
           nacos:
             server-addr: ${nacos.server-addr}
-            dataId: ${spring.application.name}-sentinel
+            dataId: ${spring.application.name}-sentinel-flow
             namespace: ns-${spring.profiles.active:release}
             groupId: DEFAULT_GROUP
             data-type: json
-            rule-type: flow # 规则：com.alibaba.cloud.sentinel.datasource.RuleType     FlowRule 限流规则
+            rule-type: flow # 规则：com.alibaba.cloud.sentinel.datasource.RuleType     限流规则配置
+            username: ${nacos.username}
+            password: ${nacos.password}
+        ds-param-flow:  # 自定义
+          nacos:
+            server-addr: ${nacos.server-addr}
+            dataId: ${spring.application.name}-sentinel-param-flow
+            namespace: ns-${spring.profiles.active:release}
+            groupId: DEFAULT_GROUP
+            data-type: json
+            rule-type: param-flow # 规则：com.alibaba.cloud.sentinel.datasource.RuleType    热点规则配置
             username: ${nacos.username}
             password: ${nacos.password}
