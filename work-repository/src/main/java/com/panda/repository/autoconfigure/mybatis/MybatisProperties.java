@@ -1,4 +1,4 @@
-package com.panda.repository.autoconfigure.database;
+package com.panda.repository.autoconfigure.mybatis;
 
 import lombok.Data;
 import lombok.experimental.Accessors;
@@ -9,7 +9,6 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
  */
 @Data
 @Accessors(chain = true)
-@ConfigurationProperties(prefix = "xss.database")
-public class DatabaseProperties {
-
+@ConfigurationProperties(prefix = "xss.mybatis")
+public class MybatisProperties {
 }

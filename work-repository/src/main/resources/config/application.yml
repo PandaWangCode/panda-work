@@ -1,0 +1,4 @@
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true                    # 开启驼峰命名匹配
+  mapper-locations: classpath:mybatis/mapper/**/*.xml     # mapper.xml文件路径

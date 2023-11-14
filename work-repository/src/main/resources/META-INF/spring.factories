@@ -1,2 +1,3 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=
-#  com.panda.repository.autoconfigure.database.DatabaseAutoConfiguration
+org.springframework.boot.autoconfigure.EnableAutoConfiguration= \
+  com.panda.repository.autoconfigure.database.DatabaseAutoConfiguration,\
+  com.panda.repository.autoconfigure.mybatis.MybatisAutoConfiguration

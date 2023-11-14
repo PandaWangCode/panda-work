@@ -4,11 +4,14 @@ import lombok.AllArgsConstructor;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Configuration;
 
-//@AllArgsConstructor
+/**
+ * @author wangpan
+ */
+@AllArgsConstructor
 @Configuration
-//@EnableConfigurationProperties(DatabaseProperties.class)
+@EnableConfigurationProperties(DatabaseProperties.class)
 public class DatabaseAutoConfiguration {
 
-//    private final DatabaseProperties databaseProperties;
+    private final DatabaseProperties databaseProperties;
 
 }

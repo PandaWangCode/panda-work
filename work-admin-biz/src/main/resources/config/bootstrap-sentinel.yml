@@ -3,7 +3,7 @@ spring:
     sentinel:
       transport:
         port: 8719
-        dashboard: localhost:9001
+        dashboard: 192.168.0.181:9001
       eager: true  # 服务启动直接建立心跳链接
       datasource:
         ds-flow:  # 自定义

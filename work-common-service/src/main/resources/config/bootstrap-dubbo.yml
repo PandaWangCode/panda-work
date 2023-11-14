@@ -8,8 +8,8 @@ dubbo:
   registry:
     address: spring-cloud://${nacos.server-addr}
     check: false
-#  cloud:
-#    subscribed-services:
+  cloud:
+    subscribed-services:
   provider:
     timeout: 300000
     retries: 0
